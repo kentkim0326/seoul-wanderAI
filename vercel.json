@@ -15,8 +15,5 @@
         { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
       ]
     }
-  ],
-  "env": {
-    "VITE_SEOUL_API_KEY": "@seoul_api_key"
-  }
+  ]
 }
