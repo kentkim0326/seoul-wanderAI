@@ -4,8 +4,15 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  root: '.',
   resolve: {
     alias: { '@': path.resolve(__dirname, './src') },
   },
   server: { port: 3000 },
+  build: {
+    outDir: 'dist',
+    rollupOptions: {
+      input: path.resolve(__dirname, 'index.html'),
+    },
+  },
 })
