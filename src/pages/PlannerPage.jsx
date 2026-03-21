@@ -74,7 +74,7 @@ export default function PlannerPage() {
           themes, days, language: i18n.language?.slice(0,2) || 'en', extraRequest: extra,
         })
       } catch {
-        course = getMockCourse(i18n.language?.slice(0,2) || 'en')
+        course = getMockCourse({ themes, days, language: i18n.language?.slice(0,2) || 'en' })
       }
       navigate('/result', { state: { course, themes, days } })
     } catch (err) {
